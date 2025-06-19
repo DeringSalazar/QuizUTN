@@ -41,3 +41,8 @@ app.delete('/api/datos', (req, res) => {
 app.listen(port, () => {
   console.log(`Servidor corriendo en http://localhost:${port}`);
 });
+
+// Endpoint raíz para que la página principal responda
+app.get('/', (req, res) => {
+  res.send('Bienvenido a mi API desplegada en Azure 🚀');
+});
