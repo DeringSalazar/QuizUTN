@@ -9,6 +9,10 @@ on:
       - main
   workflow_dispatch:
 
+permissions:
+  id-token: write  # Necesario para autenticación OIDC
+  contents: read   # Necesario para actions/checkout
+
 jobs:
   build-and-deploy:
     runs-on: windows-latest
@@ -59,4 +63,3 @@ jobs:
           app-name: 'quizutncn'
           slot-name: 'Production'
           package: .
-          
