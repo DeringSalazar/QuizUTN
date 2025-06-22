@@ -39,7 +39,7 @@ app.delete('/api/datos', (req, res) => {
 
 // Iniciar el servidor
 app.listen(port, () => {
-  console.log(`Servidor corriendo en http://localhost:${port}`);
+  console.log(`Servidor corriendo en el puerto: ${port}`);
 });
 
 // Endpoint raíz para que la página principal responda
